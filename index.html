@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Songs to Listen To</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #fcfcfd;
+    --grid: #e1e6ef;
+    --ink: #1c2a5c;
+    --muted: #5b6480;
+    --rule: #c9d0e0;
+    --accent: #1f6f8b;
+    --press: #eef3fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12151c;
+      --grid: #1e2330;
+      --ink: #e6e9f5;
+      --muted: #9aa3bd;
+      --rule: #2c3346;
+      --accent: #6cc3df;
+      --press: #1a2030;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12151c;
+    --grid: #1e2330;
+    --ink: #e6e9f5;
+    --muted: #9aa3bd;
+    --rule: #2c3346;
+    --accent: #6cc3df;
+    --press: #1a2030;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 26px 26px;
+    color: var(--ink);
+    font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  main {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 28px 18px 56px;
+  }
+  h1 {
+    font-family: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 1.05;
+    margin: 0 0 4px;
+  }
+  .lede {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 16px;
+  }
+  h2 {
+    font-family: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 34px 0 6px;
+    display: inline-block;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1px;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { border-bottom: 1px solid var(--rule); background: var(--paper); }
+  li:first-child { border-top: 1px solid var(--rule); }
+  a.song {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 6px;
+    min-height: 64px;
+    color: inherit;
+    text-decoration: none;
+  }
+  a.song:active { background: var(--press); }
+  a.song:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+  .play {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: grid;
+    place-items: center;
+  }
+  .play svg { width: 16px; height: 16px; margin-left: 2px; fill: var(--paper); }
+  .text { flex: 1; min-width: 0; }
+  .title { display: block; font-weight: 600; font-size: 19px; }
+  .meta { display: block; color: var(--muted); font-size: 15px; margin-top: 1px; }
+  .extra {
+    display: inline-block;
+    margin: 0 0 12px 60px;
+    font-size: 15px;
+    color: var(--accent);
+  }
+  li .extra-wrap { padding: 0 6px 2px; }
+  footer {
+    margin-top: 36px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Songs to listen to</h1>
+  <p class="lede">Tap a song to open it on the Church website and press play.</p>
+
+  <h2>Children's Songbook</h2>
+  <ul>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/my-heavenly-father-loves-me?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">My Heavenly Father Loves Me</span><span class="meta">Page 228</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/i-will-follow-gods-plan?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">I Will Follow God's Plan</span><span class="meta">Page 164</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/kindness-begins-with-me?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Kindness Begins with Me</span><span class="meta">Page 145</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/love-one-another?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Love One Another</span><span class="meta">Page 136</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/well-bring-the-world-his-truth-army-of-helaman?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">We'll Bring the World His Truth</span><span class="meta">Page 172</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/the-hearts-of-the-children?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Hearts of the Children</span><span class="meta">Page 92</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/media/video/2011-12-0017-build-an-ark?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Build an Ark</span><span class="meta">From the Friend magazine</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/music-from-the-friend/1987/10/scripture-power?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Scripture Power</span><span class="meta">From the Friend magazine</span></span></a></li>
+  </ul>
+
+  <h2>New Hymns</h2>
+  <ul>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/holding-hands-around-the-world?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Holding Hands Around the World</span><span class="meta">Hymns, page 1011</span></span></a></li>
+    <li><a class="song" href="https://www.churchofjesuschrist.org/study/music/hymns-for-home-and-church/holy-places?lang=eng" target="_blank" rel="noopener">
+      <span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1v14l13-7z"/></svg></span>
+      <span class="text"><span class="title">Holy Places</span><span class="meta">Hymns, page 1026</span></span></a></li>
+  </ul>
+
+  <footer>Songs open on churchofjesuschrist.org.</footer>
+</main>
+</body>
+</html>
